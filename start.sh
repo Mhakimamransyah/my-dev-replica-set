@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DELAY=10
+DELAY=20
 
 echo "****** RUN DOCKER COMPOSE ******"
 
@@ -16,4 +16,4 @@ echo "****** Waiting for ${DELAY} seconds for containers to go up ******"
 
 sleep $DELAY
 
-docker exec mongo1 /scripts/rs-init.sh
+docker exec mongo1 ./scripts/rs-init.sh
